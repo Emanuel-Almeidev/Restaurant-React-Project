@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Form } from './styles';
-import logo from '../../assets/logo.svg'
-import { Link} from 'react-router-dom'
+import logo from '../../assets/logo-orange.svg'
+import { Link } from 'react-router-dom'
 
 
 class Login extends Component {
@@ -27,8 +27,9 @@ class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         //Simulando um login
-        this.props.history.push('/')
+        this.props.history.push('/pedidos')
     }
+    1
 
     render() { 
         return (
@@ -52,7 +53,7 @@ class Login extends Component {
                         value={this.state.password}
                         onChange={this.handlePasswordChange}
                     />
-                    <Link>RECUPERAR MINHA SENHA</Link>
+                    <Link to="/">RECUPERAR MINHA SENHA</Link>                    
                     <button type="submit">ENTRAR</button>
                 </Form>
             </Container>

@@ -7,5 +7,18 @@
 
 body{
   background-color: #FAFAFA;
-  
+  font-family: Open Sans;
+}
+a{
+  text-decoration: none;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#root, body, html{
+  height: 100%;
 }
